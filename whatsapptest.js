@@ -1,0 +1,6 @@
+await driver.actions()
+              // .keyDown(Key.CONTROL)
+              // .sendKeys('v')
+              // .keyUp(Key.CONTROL)
+              // .sendKeys(Key.RETURN)
+              // .perform()

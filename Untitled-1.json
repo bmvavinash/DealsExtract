@@ -1,0 +1,34 @@
+{
+  "id": 66,
+  "category": {
+    "id": 0,
+    "name": "string",
+    "c1": "string",
+    "c2": "string",
+    "c3": "string"
+  },
+  "name": "dogg66ie",
+  "from": "Amazon",
+  "photoUrls": [
+    "string"
+  ],
+  "links": {
+    "avinashbmv": "string",
+    "bmvavinash": "string",
+    "offers": "string",
+    "avideals": "string",
+    "avideals5": "string",
+    "avideals6": "string",
+    "avideals7": "string",
+    "avideals8": "string",
+    "avideals9": "string",
+    "avideals10": "string"
+  },
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}

@@ -1,0 +1,49 @@
+<script type="text/javascript">  
+function getcube(){  
+var number=document.getElementById("number").value;  
+alert(number*number*number);  
+}  
+// <!DOCTYPE html>
+// <html>
+// <body>
+
+// <h1 id="demo">The Document Object</h1>
+// <h2>The getElementById() Method</h2>
+
+// <script>
+// const myElement = document.getElementById("demo");
+// myElement.style.color = "red";
+
+
+const { Builder, By, Key, util} = require("selenium-webdriver")
+async function example() {
+    let driver = await new Builder().forBrowser("firefox").build();
+    
+
+    
+    var Link = "https://amzn.eu/d/fvjhOPh"
+    
+    var Link = driver.findElement(By.id('url')).value();
+    
+    await driver.get(Link);
+    
+    const myElement = document.getElementById("demo");
+    myElement.style.color = "red";
+    
+    
+    
+    let strUrl = await driver.getCurrentUrl()
+    let i= strUrl.indexOf("/dp");
+    strUrl = strUrl.substring(0,i+14);
+    await driver.get(`${strUrl}/?tag=109dd6-21`);
+    driver.findElement(By.id("ASIN")).sendKeys(Key.F6,"Selenium Search",Key.RETURN);
+}
+
+</script>  
+<form>  
+    Enter No:<input type="text" id="number" name="number"/><br/>  
+    <input type="button" value="cube" onclick="example()"/>  
+    <!-- <input type="button" value="cube" onclick="getcube()"/>   -->
+</form>  
+</body> 
+</html>
